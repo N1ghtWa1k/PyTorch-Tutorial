@@ -27,7 +27,7 @@ loader = Data.DataLoader(
 
 def show_batch():
     for epoch in range(3):   # train entire dataset 3 times
-        for step, (batch_x, batch_y) in enumerate(loader):  # for each training step
+        for step, (batch_x, batch_y) in enumerate(loader):  # for each training step  序号从0开始
             # train your data...
             print('Epoch: ', epoch, '| Step: ', step, '| batch x: ',
                   batch_x.numpy(), '| batch y: ', batch_y.numpy())
