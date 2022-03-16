@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 # fake data
 x = torch.linspace(-5, 5, 200)  # x data (tensor), shape=(100, 1)
 x = Variable(x)
-x_np = x.data.numpy()   # numpy array for plotting
+x_np = x.data.numpy()   # numpy array for plotting   这里来plt只识别np的格式 所以进行转换，下面也是同理
 
 # following are popular activation functions
 y_relu = torch.relu(x).data.numpy()
